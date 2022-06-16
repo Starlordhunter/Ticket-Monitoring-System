@@ -1,0 +1,55 @@
+
+RewriteOptions inherit
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>
+
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
+
+deny from 58.75.126.235
+deny from 52.7.190.205
+
+deny from 202.185.142.175
+deny from 58.26.67.73
+deny from 31.129.42.137
+deny from 185.81.99.143
+deny from 31.129.54.246
+deny from 205.201.134.72
+deny from 171.100.8.82
+deny from 202.40.190.81
+deny from 199.15.213.112
+deny from 151.248.3.67
+deny from 106.240.131.5
+deny from 223.197.250.232
+deny from 220.149.86.245
+deny from 14.187.37.166
+deny from 151.248.3.70
+deny from 54.149.0.254
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php72” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php72 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

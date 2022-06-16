@@ -1,0 +1,327 @@
+/*--------------------- Copyright (c) 2021 -----------------------
+[Master Stylesheet]
+Project: dash store
+Version: 1.0.0
+Author:
+-------------------------------------------------------------------*/
+
+
+/*--- Common CSS ----*/
+
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --off-white: #f8f8f8;
+    --border-color: #efefef;
+    --muted: #181818;
+    --primary: #11a1fd;
+    --primary-light: #11a1fd;
+    --secondary: #272e48;
+    --secondary-light: #315f72;
+    --danger: #e81a46;
+    --danger-light: #ed4b71;
+    --success: #6ca329;
+    --success-light: #79b530;
+    --info: #07a8ff;
+    --info-light: #5fc5ff;
+    --warning: #ffa000;
+    --warning-light: #ffb448;
+    --dark: #272e48;
+    --dark-light: #122e67;
+    --light: #dae0e5;
+    --light-light: #d3d9df;
+    --facebook: #3b5998;
+    --twitter: #00acee;
+    --instagram: #dd2a7b;
+    --google: #F4B400;
+    --rating: #ffca2b;
+    --price: #ff6b50;
+    --light-bg: #fbf2f2;
+    --txt: #181818;
+    --title-color: #272e48;
+}
+
+* {
+    outline: 0 !important;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    color: var(--txt);
+    background: var(--off-white);
+    overflow-x: hidden;
+    background-image:url('../images/darkBlue2.jfif');
+    background-repeat:no-repeat;
+    background-size:cover;
+
+}
+
+
+.wrap{
+  width:80%;
+  margin:auto;
+  margin-top:10px;
+  border-radius: 10px;
+  padding-right: 40px;
+  padding-bottom: 5px;
+  /* background-color: var(--off-white); */
+}
+
+.wrap h1{
+  font-family: "Times New Roman";
+  color: #ecfaff;
+  text-shadow: 1px 1px #000000;
+  text-transform: uppercase;
+}
+.sidetitle{
+  height: 100%;
+  width:95%;
+  margin-top: 25px;
+  margin-left: 40px;
+  padding: 5px;
+  /* border-radius: 10px;
+  box-shadow: 0 0 20px 0 rgb(0 0 0 / 0.03);
+  -webkit-box-shadow: 0px 12px 23px 0px rgba(62, 73, 84, 0.04);
+  background: radial-gradient(#1fe4f5, #3fbafe); */
+  position: relative;
+  float: left;
+}
+
+.sidetitle .row{
+  margin-left: 10px;
+  margin-bottom:5px;
+  padding: 5px;
+}
+.sidetitle a{
+  width:10%;
+  font-size: 25px;
+  font-family: 'Times New Roman';
+  color: #ecfaff;
+  text-shadow: 1px 1px #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.stats{
+  width: 85%;
+}
+.navbar{
+    background:#ecfaff;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.04);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+#clock{
+  font-weight: bold;
+  font-size: 23px;
+}
+
+.logout{
+  width: fit-content;
+  height: fit-content;
+  border:0;
+  padding:0;
+  margin-left:95%;
+  margin-top:-2%;
+  
+}
+
+
+.logout a{
+  color: #000000;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+
+/* Admin DashBoard Style */
+
+
+.dd-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.icon-info-text {
+    width: calc(100% - 30px);
+    padding: 0 0 0 5px;
+    text-align: left;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.icon-info-text ul{
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+
+.icon-info-text ul strong{
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.icon-info-text ul span{
+    color: #323232;
+    float: right;
+    font-weight: 600;
+    text-align: right;
+    margin-left: auto;
+}
+
+
+
+.ad-info-card {
+    height: 100%;
+    overflow: hidden;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    box-shadow: 0px 6px 6px 1px rgba(0, 0, 0, 0.5);
+}
+
+.ad-info-card:hover {
+    -webkit-transform: translateY(-6px);
+    -moz-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    -o-transform: translateY(-6px);
+    transform: translateY(-6px);
+}
+
+.ad-info-card,
+.ad-info-card:hover {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-left: 15px;
+}
+
+.card-body {
+    position: relative;
+    z-index: 1;
+  	padding: 5px;
+}
+
+
+.ad-title {
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.ad-card-title {
+    width: 100%;
+    font-size: 5px;
+    font-weight: 500;
+    margin: 5px 0 0;
+    padding:0;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+
+
+/* Responsive Style  */
+@media(max-width: 1799px) {
+	.btn {
+		margin: 2px;
+	}
+	.mfh-machine-profile .nav-tabs .nav-link {
+		padding: 0 15px 20px;
+		font-size: 14px;
+	}
+	.ad-title {
+		font-size: 14px;
+	}
+	.ad-card-title {
+		font-size: 15px;
+	}
+	.icon-info-text {
+		padding: 0 0 0 10px;
+	}
+	.prooduct-details-box .media {
+		display: block;
+		text-align: center;
+	}
+	.prooduct-details-box img {
+		width: 100px;
+		margin-right: 0px;
+		margin-bottom: 10px;
+		height: 100px;
+	}
+	.ad-user-btn {
+		margin-right: 3px;
+	}
+
+}
+
+.pending{
+  color:red;
+  font-size: 25px;
+}
+
+.today{
+  font-size: 25px;
+}
+
+
+
+/* dashboard style */
+.chartinfo {
+    width: 100%;
+    height: 100%;
+    margin-left:20px;
+    border-radius: 5px;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.5);
+    background: var(--white);
+    padding:15px 15px;
+    position: relative;
+
+}
+
+
+
+
+.tab-content {
+  width: 95%;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  padding:auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.5);
+  background: var(--white);
+  text-transform: uppercase;
+  border:none;
+}
+
+.tab-content .tab-pane .table-responsive th{
+  background-color: #ecfaff;
+}
+
+

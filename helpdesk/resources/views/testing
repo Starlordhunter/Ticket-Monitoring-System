@@ -1,0 +1,92 @@
+<div class="row">
+    <a href="#"><h4>KPM</h4></a>
+    <div class="stats">
+        <div class="row">
+            <div class="col-xl-3 col-lg-6 col-md-6 ">
+                <!-- Start Card-->
+                <div class="card  ad-info-card">
+                    <div class="card-body dd-flex align-items-center">
+                        <!-- <div class="icon-info">
+                        <img src="images/today.png">
+                        </div> -->
+                        <div class="icon-info-text" style="text-align:center;">
+                            <h4 class="ad-card-title today"><b>Today</b></h4>
+                            <ul>
+                                <li>
+                                    0
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>                                    
+            </div>
+
+            <div class="col-xl-3 col-lg-6 col-md-6 ">
+                <!-- Start Card-->
+                        <div class="card ad-info-card">
+                            <div class="card-body dd-flex align-items-center">
+                                <!-- <div class="icon-info">
+                                </div> -->
+                                <div class="icon-info-text pending" style="text-align:center;">
+                                    <h4 class="ad-card-title pending"><b>Pending</b></h4>
+                                    <ul>
+                                        <li>
+                                            0
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                
+            </div>                            
+            <div class="col-xl-3 col-lg-6 col-md-12 ">
+                
+                <!-- Start Card-->
+                    <div class="card ad-info-card">
+                        <div class="card-body dd-flex align-items-center">
+                            <!-- <div class="icon-info">  
+                            </div> -->
+                            <div class="icon-info-text">
+                                <h4 class="ad-card-title"><b>WEEK</b></h4>
+                                <ul>
+                                    <li>
+                                        <strong>Current</strong> 
+                                        <span>0</span>
+                                    </li>
+                                    <li>
+                                        <strong>Closed</strong> 
+                                        <span>0</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+                    
+                
+                
+            <div class="col-xl-3 col-lg-6 col-md-12">
+                <div class="card ad-info-card">
+                    <div class="card-body dd-flex align-items-center">
+                        <!-- <div class="icon-info">
+                        </div> -->
+                        <div class="icon-info-text">
+                            <h4 class="ad-card-title"><b>Month</b></h4>
+                            <ul>
+                                <li>
+                                    <strong>Current</strong>
+                                    <span>0</span>
+                                </li>
+                                <li>
+                                    <strong>Last Month</strong>
+                                    <span>0</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>                        
+        </div>
+    </div>
+
+</div>
